@@ -1,0 +1,9 @@
+﻿body{ position: absolute; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; padding-top: 50px; -webkit-overflow-scrolling: touch;}
+.navbar { background-color: #FFF;}
+.navbar-brand {  font-family: YW; padding: 23px 15px; font-size: 28px; color: #c9e1f7 !important; font-weight: bold;}
+.navbar-nav li { margin: 0 30px; }
+.navbar-nav li a { color: #575757;}
+.banner { margin-bottom: 50px;}
+.banner img { width: 100%; vertical-align: top;}
+.pic img { display: block; width: 100%; }
+.pic img:first-child{ margin-bottom: 13px;}
