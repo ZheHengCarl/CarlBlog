@@ -16,4 +16,8 @@ dl:after { display:block; content:""; clear:both;}
     src:url('../fonts/Dr-Carbfred.ttf');
     font-family: YW;
 }
+@font-face { 
+    src:url('../fonts/fzchyj.ttf');
+    font-family: fzchyj;
+}
 ::-webkit-scrollbar{display:none; }

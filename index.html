@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carl Blog | Web前端</title>
+    <!-- <link href="/images/favicon.ico" rel="shortcut icon" /> -->
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/com.css" rel="stylesheet" />
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/Cmn.js"></script>
-    <script src="js/CmnFuncExd.js"></script>
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
@@ -63,7 +62,9 @@
             <div class="col-md-6">
                 <div>
                     <img src="./img/temp2.jpg" alt="">
-                    <div class="cover"></div>
+                    <div class="cover">
+                        <div class="cover-title">测试标题啊啊啊啊啊啊啊啊啊</div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 ">
@@ -78,7 +79,7 @@
             </div>
         </div>
         <div class="title-general">
-            <span>置顶文章</span>
+            <span>工具分享</span>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -101,7 +102,7 @@
             </div>
         </div>
         <div class="title-general">
-            <span>置顶文章</span>
+            <span>生活随笔</span>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -158,6 +159,27 @@
             } else {
                 $(".navbar").fadeIn(250);
             }
+            // if (_scrollTop >= 350) {
+            //     $(".banner p:odd").css({
+            //         "transform": "translateX(100%)",
+            //         "opacity": 0,
+            //     });
+            //     $(".banner p:even").css({
+            //         "transform": "translateX(-100%)",
+            //         "opacity": 0,
+            //     });
+            // }
+            // else
+            // {
+            //     $(".banner p:odd").css({
+            //     "transform": "translateX(0)",
+            //     "opacity": 1,
+            //     });
+            //     $(".banner p:even").css({
+            //         "transform": "translateX(0)",
+            //         "opacity": 1,
+            //     });
+            // }
         });
     </script>
 </body>

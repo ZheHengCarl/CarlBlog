@@ -7,18 +7,21 @@
 .navbar-nav li a.active { color: #a4cff8 !important; }
 .navbar-nav li a::after { position: absolute; top: 100%; left: 0px; width: 100%; text-align: center; line-height: 80px; background: none repeat scroll 0% 0% #a4cff8; color: #FFF; content: attr(data-hover); transform: rotateX(-90deg); transform-origin: top;  }
 .banner { position: relative; background: url('../img/banner3.jpg') no-repeat center center fixed / auto;}
-.banner ul { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%,-50%); font-size: 18px; color: #FFF;}
-.banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; transform-style: preserve-3d;}
+.banner ul { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%,-50%); font-size: 35px; color: #FFF;}
+.banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; }
 .banner ul li p:nth-child(odd) { opacity: 0; transform: translateX(-100%);}
 .banner ul li p:nth-child(even) { opacity: 0; transform: translateX(100%);}
 /* 通用文章标题 */
 .title-general { margin:50px; text-align: center; font-weight: bold; color: #000; font-size: 20px;}
 .title-general span { border-bottom: 2px solid #000; padding-bottom: 5px;}
 /* 文章hover效果 */
-.row div { position: relative; background-color: #FFF; border-radius: 10px; cursor: pointer;}
+.row div { position: relative; border-radius: 10px; cursor: pointer;}
 .row div div:hover .cover { opacity: 1;}
 .row div .cover { opacity: 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .5);  transition: all 1s ease; }
 .col-1 { padding: 10px;}
+.row .cover-title { position: absolute; left: 50%; top: 0; width: 80%; padding: 50px 0; transform: translateX(-50%); color: #FFF; font-weight: bold; font-size: 25px; line-height: 30px; text-align: center;}
+
+
 
 .pic img { display: block; width: 100%; border-radius: 10px;}
 .pic img:first-child{ margin-bottom: 13px;}
