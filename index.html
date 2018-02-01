@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
     <title>Carl Blog | Web前端</title>
     <!-- <link href="/images/favicon.ico" rel="shortcut icon" /> -->
     <link href="css/reset.css" rel="stylesheet" />
@@ -34,7 +35,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#" class="active" data-hover="主页">Home</a>
+                        <a href="#" class="active" data-hover="首页">Home</a>
                     </li>
                     <li>
                         <a href="#" data-hover="工具">Tool</a>
@@ -56,7 +57,7 @@
     </div>
     <div class="container pic">
         <div class="title-general">
-            <span>置顶文章</span>
+            <span>最新文章</span>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -151,7 +152,6 @@
                 "opacity": 1,
             });
         }).resize(_Size);
-        // var _adaptive = new Cmn.Func.WebsiteAdaptive(winHeight, winWeight, "",Cmn.Func.MobileAdaptiveMode.WidthHeight);
         $("body").bind("mousewheel", function () {
             var _scrollTop = $("html").scrollTop();
             if (_scrollTop > 20) {
@@ -159,27 +159,6 @@
             } else {
                 $(".navbar").fadeIn(250);
             }
-            // if (_scrollTop >= 350) {
-            //     $(".banner p:odd").css({
-            //         "transform": "translateX(100%)",
-            //         "opacity": 0,
-            //     });
-            //     $(".banner p:even").css({
-            //         "transform": "translateX(-100%)",
-            //         "opacity": 0,
-            //     });
-            // }
-            // else
-            // {
-            //     $(".banner p:odd").css({
-            //     "transform": "translateX(0)",
-            //     "opacity": 1,
-            //     });
-            //     $(".banner p:even").css({
-            //         "transform": "translateX(0)",
-            //         "opacity": 1,
-            //     });
-            // }
         });
     </script>
 </body>
