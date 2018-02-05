@@ -20,4 +20,9 @@ dl:after { display:block; content:""; clear:both;}
     src:url('../fonts/fzchyj.ttf');
     font-family: fzchyj;
 }
+@font-face { 
+    src:url('../fonts/PTSans.ttf');
+    font-family: PTSans;
+    font-weight: normal;
+}
 ::-webkit-scrollbar{display:none; }
