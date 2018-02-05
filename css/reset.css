@@ -25,4 +25,8 @@ dl:after { display:block; content:""; clear:both;}
     font-family: PTSans;
     font-weight: normal;
 }
-::-webkit-scrollbar{display:none; }
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* only needed once */
+body { margin-right:-14px!important; overflow-y:scroll; overflow-x:hidden;}
+/*Chrome下隐藏滚动条，溢出可以透明滚动*/
+html::-webkit-scrollbar{width:0px}
