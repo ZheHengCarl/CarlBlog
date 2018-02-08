@@ -1,4 +1,4 @@
-﻿body{ position: absolute; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; -webkit-overflow-scrolling: touch; transform-style: preserve-3d;}
+﻿body{ position: absolute; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; -webkit-overflow-scrolling: touch; transform-style: preserve-3d; }
 .navbar { background:transparent; border: none;}
 .navbar-brand {  height: auto; line-height: initial; font-family: YW; padding: 23px 15px; font-size: 28px; color: #c9e1f7 !important; font-weight: bold; text-shadow: 1px 1px #FFF; user-select: none;}
 .navbar-nav li { display: inline-block;  margin: 0 15px;text-transform: unset; letter-spacing: 2px; }
@@ -7,11 +7,11 @@
 .navbar-nav li:hover a { background: #fff; color: #a4cff8 !important; transform: rotateX(90deg) translateY(-20px); cursor: pointer; }
 .navbar-nav li a.active { color: #a4cff8 !important; }
 .navbar-nav li a::after { position: absolute; top: 100%; left: 0px; width: 100%; text-align: center; line-height: 80px; background: none repeat scroll 0% 0% #a4cff8; color: #FFF; content: attr(data-hover); transform: rotateX(-90deg); transform-origin: top;  }
-.banner { position: relative; background: url("../img/banner4.jpg") no-repeat center center; background-attachment: fixed; background-size: auto;}
+.banner { position: relative; background: url("../img/banner4.jpg") no-repeat center center; background-attachment: fixed; will-change: transform;  background-size: auto;}
 .banner::before { display: block; contain: "123";}
 /* .banner div { float: left; width: 50px; height: 50px;} */
 .banner ul { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%,-50%); font-size: 35px; color: #FFF;}
-.banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; will-change: transform; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 .banner ul li p:nth-child(odd) { opacity: 0; transform: translateX(-100%);}
 .banner ul li p:nth-child(even) { opacity: 0; transform: translateX(100%);}
 /* 通用文章标题 */
