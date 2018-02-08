@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <meta name="keyword" content="carl 卡尔 许哲恒 博客 前端" />
+    <meta name="keyword" content="carl,卡尔,许哲恒,博客,前端" />
+    <meta name="description" content="Carl.Xu Blog">
     <title>Carl Blog | Web前端</title>
     <!-- <link href="/images/favicon.ico" rel="shortcut icon" /> -->
     <link href="css/reset.css" rel="stylesheet" />
@@ -165,8 +166,8 @@
             var _scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
 
             //变色
-            // hueRotate+= d*1;
-            // $(".banner").css("-webkit-filter","hue-rotate("+hueRotate+"deg)");
+            hueRotate+= d*1;
+            $(".banner").css("-webkit-filter","hue-rotate("+hueRotate+"deg)");
             console.log(d,d*10);
             if (_scrollTop > 20) {
                 $(".navbar").fadeOut(250);

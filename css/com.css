@@ -7,7 +7,8 @@
 .navbar-nav li:hover a { background: #fff; color: #a4cff8 !important; transform: rotateX(90deg) translateY(-20px); cursor: pointer; }
 .navbar-nav li a.active { color: #a4cff8 !important; }
 .navbar-nav li a::after { position: absolute; top: 100%; left: 0px; width: 100%; text-align: center; line-height: 80px; background: none repeat scroll 0% 0% #a4cff8; color: #FFF; content: attr(data-hover); transform: rotateX(-90deg); transform-origin: top;  }
-.banner { position: relative; background: url("../img/banner4.jpg") no-repeat center center; background-attachment: fixed;  background-size: auto;}
+.banner { position: relative; background: url("../img/banner4.jpg") no-repeat center center; background-attachment: fixed; background-size: auto;}
+.banner::before { display: block; contain: "123";}
 /* .banner div { float: left; width: 50px; height: 50px;} */
 .banner ul { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%,-50%); font-size: 35px; color: #FFF;}
 .banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
