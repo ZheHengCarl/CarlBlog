@@ -5,7 +5,7 @@
 .navbar-header h1 { float: left; margin: 0;}
 .navbar-nav li a { display: block; padding: 30px; color: #FFF !important; font-size: 22px; font-family:PTSans; text-decoration: none; transition: transform 0.5s ease 0s; transform-origin: top; transform-style: preserve-3d;}
 .navbar-nav li:hover a { background: #fff; color: #a4cff8 !important; transform: rotateX(90deg) translateY(-20px); cursor: pointer; }
-.navbar-nav li a.active { color: #a4cff8 !important; }
+.navbar-nav li a.active { color: #a4cff8 !important;  }
 .navbar-nav li a::after { position: absolute; top: 100%; left: 0px; width: 100%; text-align: center; line-height: 80px; background: none repeat scroll 0% 0% #a4cff8; color: #FFF; content: attr(data-hover); transform: rotateX(-90deg); transform-origin: top;  }
 .banner { position: relative; background: url("../img/banner4.jpg") no-repeat center center; background-attachment: fixed; will-change: transform;  background-size: auto;}
 .banner::before { display: block; contain: "123";}
