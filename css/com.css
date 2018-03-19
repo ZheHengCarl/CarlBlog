@@ -7,8 +7,23 @@
 .navbar-nav li:hover a { background: #fff; color: #a4cff8 !important; transform: rotateX(90deg) translateY(-20px); cursor: pointer; }
 .navbar-nav li a.active { color: #a4cff8 !important;  }
 .navbar-nav li a::after { position: absolute; top: 100%; left: 0px; width: 100%; text-align: center; line-height: 80px; background: none repeat scroll 0% 0% #a4cff8; color: #FFF; content: attr(data-hover); transform: rotateX(-90deg); transform-origin: top;  }
-.banner { position: relative; background: url("../img/banner4.jpg") no-repeat center center; background-attachment: fixed; will-change: transform;  background-size: auto;}
-.banner::before { display: block; contain: "123";}
+.banner { position: relative; width: 100%; height: 100%; background: url("../img/banner4.jpg") no-repeat center center; /*animation: bannerImg 20s 0s ease-in-out infinite;*/ background-attachment: fixed; will-change: transform; background-size: cover;}
+/* banner轮播动画 */
+/* @keyframes bannerImg {
+    0% { background-image: url("../img/banner4.jpg");}
+    10% { background-image: url("../img/banner5.jpg");}
+    20% { background-image: url("../img/banner7.jpg");}
+    30% { background-image: url("../img/banner8.jpg");}
+    40% { background-image: url("../img/banner9.jpg");}
+    50% { background-image: url("../img/banner12.jpg");}
+    60% { background-image: url("../img/banner14.jpg");}
+    70% { background-image: url("../img/banner15.jpg");}
+    80% { background-image: url("../img/banner4.jpg");}
+    90% { background-image: url("../img/banner4.jpg");}
+    100% { background-image: url("../img/banner4.jpg");}
+} */
+/* .banner::before { display: block; contain: "123";} */
+/* .banner>div { float: left; text-align: center; color: #FFF; background-color: #000;} */
 /* .banner div { float: left; width: 50px; height: 50px;} */
 .banner ul { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%,-50%); font-size: 35px; color: #FFF;}
 .banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; will-change: transform; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }

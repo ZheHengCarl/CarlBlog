@@ -10,12 +10,13 @@
     <meta name="description" content="Carl.Xu Blog">
     <title>Carl Blog | Web前端</title>
     <!-- <link href="/images/favicon.ico" rel="shortcut icon" /> -->
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/com.css" rel="stylesheet" />
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="./js/com.js"></script>
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/com.css" rel="stylesheet" />
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/com.js"></script>
+    <!-- <style id="myStyle"></style> -->
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
@@ -33,7 +34,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1><a class="navbar-brand logo" href="javascript:void(0)">Carl.Xu Blog</a></h1>
+                <h1>
+                    <a class="navbar-brand logo" href="javascript:void(0)">Carl.Xu Blog</a>
+                </h1>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -65,18 +68,18 @@
         <div class="row">
             <div class="col-md-6 ">
                 <div>
-                    <img src="./img/temp.jpg" alt="" class="first-img">
+                    <img src="../img/temp.jpg" alt="" class="first-img">
                     <div class="cover"></div>
                 </div>
                 <div>
-                    <img src="./img/temp.jpg" alt="">
+                    <img src="../img/temp.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
             <div class="col-md-6">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div>
-                        <img src="./img/temp2.jpg" alt="">
+                        <img src="../img/temp2.jpg" alt="">
                         <div class="cover">
                             <div class="cover-title">测试标题啊啊啊啊啊啊啊啊啊</div>
                             <p>后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb后台打算用node+mongodb</p>
@@ -91,19 +94,19 @@
         <div class="row">
             <div class="col-md-4">
                 <div>
-                    <img src="./img/temp3.jpg" alt="">
+                    <img src="../img/temp3.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
-                    <img src="./img/temp3.jpg" alt="">
+                    <img src="../img/temp3.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
-                    <img src="./img/temp3.jpg" alt="">
+                    <img src="../img/temp3.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
@@ -114,19 +117,19 @@
         <div class="row">
             <div class="col-md-4">
                 <div>
-                    <img src="./img/temp3.jpg" alt="">
+                    <img src="../img/temp3.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
-                    <img src="./img/temp3.jpg" alt="">
+                    <img src="../img/temp3.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
-                    <img src="./img/temp3.jpg" alt="">
+                    <img src="../img/temp3.jpg" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
@@ -142,40 +145,44 @@
         <p>Copyright &copy; Carl Blog All Rights Reserved. 沪ICP备17052524号-2</p>
     </footer>
     <script>
+        //动态获取浏览器宽高
+        var winWeight,winHeight;
+        var bannerNum = 20;
         function _Size() {
-            var winHeight = window.innerHeight;
-            var winWeight = window.innerWidth;
-            $(".banner").height(winHeight);
-            $(".banner").width(winWeight);
+            winHeight = window.innerHeight;
+            winWeight = window.innerWidth;
+            alert(winWeight);
+            alert(winHeight);
+            $(".banner p:odd, .banner p:even").css({"transform": "translateX(0)","opacity": 1,});
+            // bannerHover();
         }
-        var hueRotate = -100;
         $(window).load(function () {
             _Size();
-            $(".banner p:odd").css({
-                "transform": "translateX(0)",
-                "opacity": 1,
-            });
-            $(".banner p:even").css({
-                "transform": "translateX(0)",
-                "opacity": 1,
-            });
         }).resize(_Size);
-        var hueRotate =0;
+
+
+        //鼠标滚轮事件
         addWheelEvent(document, function (e, d) {
             //兼容各大浏览器的scrollTop写法
             var _scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-
-            //变色
-            // hueRotate+= d*1;
-            // $(".banner").css("-webkit-filter","hue-rotate("+hueRotate+"deg)");
-            console.log(d,d*10);
             if (_scrollTop > 20) {
                 $(".navbar").fadeOut(250);
             } else {
                 $(".navbar").fadeIn(250);
             }
         });
+        //banner鼠标hover动画
+        // function bannerHover(size){
+        //     $(".banner>div").remove();
+        //     for (let i = 0; i < bannerNum; i++) {
+        //         var str = `<div style='background-position-x:${-i*(winWeight/bannerNum)}px;'></div>`;
+        //         $(".banner").append(str);
+        //     }
+        //     $(".banner>div").width(winWeight/bannerNum+"px");
+        // }
+
         //vue
+        
     </script>
 </body>
 
