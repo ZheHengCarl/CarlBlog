@@ -26,7 +26,10 @@
 /* .banner>div { float: left; text-align: center; color: #FFF; background-color: #000;} */
 /* .banner div { float: left; width: 50px; height: 50px;} */
 .banner ul { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%,-50%); font-size: 35px; color: #FFF;}
-.banner ul li p { transition: all 1s ease-out; text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; will-change: transform; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.banner ul li p { transition: all 1s ease-out; color: var(--color); text-shadow: 1px 1px #000; font-family: unset; font-family: fzchyj; will-change: transform; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+:root {
+    --color: red;
+}
 .banner ul li p:nth-child(odd) { opacity: 0; transform: translateX(-100%);}
 .banner ul li p:nth-child(even) { opacity: 0; transform: translateX(100%);}
 /* 通用文章标题 */
